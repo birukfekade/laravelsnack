@@ -13,8 +13,7 @@ class SnackApiWrapper
 
     public function __construct()
     {
-        $this->baseUrl = 'https://snackmaster.wiremockapi.cloud/snacks';
-        $this->token = 'Bearer lj5iaSIZAhOFCk8dXfWrnjsUsAqKiePoblbh';
+        
     }
 
     public function getSnacks()
