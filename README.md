@@ -1,33 +1,4 @@
-Certainly! If you want to display the README content inside HTML tags, you can wrap the content with appropriate HTML tags. Here's your README content formatted with HTML tags:
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
-
-<body>
 
     <div class="container">
         <h1>Laravel Snack API Integration</h1>
@@ -78,11 +49,3 @@ Certainly! If you want to display the README content inside HTML tags, you can w
             <li>Ensure that you have proper internet connectivity to access the external snack API.</li>
             <li>Make sure to configure your database connection settings in the <code>.env</code> file.</li>
         </ul>
-    </div>
-
-</body>
-
-</html>
-```
-
-In this version, the README content is wrapped in HTML tags and styled for better readability. You can customize the styles further to match your preferred design.
