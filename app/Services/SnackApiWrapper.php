@@ -13,7 +13,8 @@ class SnackApiWrapper
 
     public function __construct()
     {
-        
+        $this->baseUrl = '';
+        $this->token = '';
     }
 
     public function getSnacks()

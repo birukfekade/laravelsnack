@@ -1,66 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Certainly! If you want to display the README content inside HTML tags, you can wrap the content with appropriate HTML tags. Here's your README content formatted with HTML tags:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-## About Laravel
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<body>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+    <div class="container">
+        <h1>Laravel Snack API Integration</h1>
 
-## Learning Laravel
+        <h2>Project Tasks</h2>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+        <h3>Task 1: API Wrapper</h3>
+        <ul>
+            <li>Created a Laravel service (<code>SnackApiService.php</code>) to connect to an external snack API.</li>
+            <li>Implemented methods to retrieve snack data from the API and handle errors gracefully.</li>
+        </ul>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+        <h3>Task 2: Scheduled Job</h3>
+        <ul>
+            <li>Created a scheduled job (<code>FetchSnacksJob.php</code>) in Laravel to run every hour.</li>
+            <li>Used the API wrapper to fetch snack data and stored it locally in the database.</li>
+        </ul>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+        <h3>Task 3: View Component</h3>
+        <ul>
+            <li>Created a Livewire component (<code>SnackComponent.php</code>) to display stored snack data.</li>
+            <li>Designed the component's Blade view (<code>snack-component.blade.php</code>) to present snacks in an
+                organized manner.</li>
+            <li>Implemented dynamic features such as looping through snack data and displaying snack details.</li>
+        </ul>
 
-## Laravel Sponsors
+        <h3>Bonus Points Tasks</h3>
+        <ul>
+            <li><strong>Use of Facades:</strong> Utilized Laravel's Http facade in the API wrapper.</li>
+            <li><strong>Use of Livewire:</strong> Implemented Livewire components for dynamic user interactions.</li>
+            <li><strong>Write a Unit Test for the Wrapper:</strong> Created unit tests to ensure the reliability of the API
+                wrapper.</li>
+            <li><strong>Wrapper Configuration:</strong> Added a configuration file for the API URL and token.</li>
+        </ul>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+        <h2>How to Use</h2>
+        <ol>
+            <li>Clone the repository: <code>git clone &lt;https://github.com/birukfekade/laravelsnack.git&gt;</code></li>
+            <li>Install dependencies: <code>composer install</code></li>
+            <li>Set up your environment variables in the <code>.env</code> file.</li>
+            <li>Migrate the database: <code>php artisan migrate</code></li>
+            <li>Run the Laravel development server: <code>php artisan serve</code></li>
+            <li>Access the application in your browser: <code>http://localhost:8000/snacks</code></li>
+        </ol>
 
-### Premium Partners
+        <h2>Additional Notes</h2>
+        <ul>
+            <li>Ensure that you have proper internet connectivity to access the external snack API.</li>
+            <li>Make sure to configure your database connection settings in the <code>.env</code> file.</li>
+        </ul>
+    </div>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+</body>
 
-## Contributing
+</html>
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+In this version, the README content is wrapped in HTML tags and styled for better readability. You can customize the styles further to match your preferred design.
